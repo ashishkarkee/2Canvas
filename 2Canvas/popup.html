@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Canvas Due Today</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="shell">
+
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-mark">▣</div>
+        <div>
+          <div class="title">2Canvas</div>
+          <div class="subtitle" id="date-label">Loading…</div>
+        </div>
+      </div>
+      <button class="icon-btn" id="settings-btn" title="Manage colleges">⚙</button>
+    </header>
+
+    <div id="main-view">
+      <div id="status-bar" class="status-bar hidden"></div>
+      <div id="assignments-list"></div>
+      <div id="empty-state" class="empty-state hidden">
+        <div class="empty-icon">✓</div>
+        <div class="empty-title">All clear!</div>
+        <div class="empty-sub">Nothing due today across all your colleges.</div>
+      </div>
+      <div id="no-accounts" class="empty-state hidden">
+        <div class="empty-icon">⚐</div>
+        <div class="empty-title">No colleges added yet</div>
+        <div class="empty-sub">Click ⚙ to add a Canvas account.</div>
+      </div>
+      <div id="cache-label" class="cache-label hidden"></div>
+      <button class="refresh-btn hidden" id="refresh-btn">↻ Refresh</button>
+    </div>
+
+    <div id="settings-view" class="hidden">
+      <div class="settings-header">
+        <button class="back-btn" id="back-btn">← Back</button>
+        <span class="settings-title">Manage Colleges</span>
+      </div>
+      <div id="accounts-list"></div>
+      <div class="add-form">
+        <div class="form-title">Add a College</div>
+        <input class="field" id="input-name" type="text" placeholder="College name (e.g. De Anza College)" />
+        <input class="field" id="input-url" type="url" placeholder="Canvas URL (e.g. https://deanza.instructure.com)" />
+        <input class="field" id="input-token" type="password" placeholder="Access token" />
+        <div class="token-help">Generate in Canvas → Account → Settings → New Access Token</div>
+        <button class="add-btn" id="add-btn">+ Add College</button>
+        <div id="form-error" class="form-error hidden"></div>
+      </div>
+    </div>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
