@@ -46,5 +46,9 @@ Repeat for each college you are enrolled at.
 4. Copy the token and paste it into the extension
 
 > Keep your token private — it grants full access to your Canvas account.
+
+ASSIGNMENT TAB:
 <img width="575" height="687" alt="image" src="https://github.com/user-attachments/assets/671b3be1-3489-48c6-a2f5-e61f149d3925" />
+
+ADD COLLEGES TAB:
 <img width="567" height="702" alt="image" src="https://github.com/user-attachments/assets/0582236c-c649-4168-996d-785e96585fd1" />
