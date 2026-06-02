@@ -1,4 +1,4 @@
-#2Canvas
+# 2Canvas
 
 This is a Chrome Extension I developed for community college students enrolled at multiple schools (like myself!), aggregating all Canvas LMS assignments due today into a single popup. Basically, it makes it easy to keep track of due dates across multiple schools :)
 
@@ -46,5 +46,3 @@ Repeat for each college you are enrolled at.
 4. Copy the token and paste it into the extension
 
 > Keep your token private — it grants full access to your Canvas account.
-
-## File Structure
